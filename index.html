@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- JavaScript Bundle with Popper -->
+<script src="https://kit.fontawesome.com/06c1620f08.js" crossorigin="anonymous"></script>
+
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script> -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.es.min.js"></script> -->
+<!-- <script type="text/javascript">
+	function clickView(){
+	var name = document.getElementById("contact-name").value;
+	var id = document.getElementById("contact-id").value;
+	var email = document.getElementById("contact-mail").value;
+	var phone = document.getElementById("contact-phone").valu;
+	var dob = document.getElementById("contact-dob").value;
+	document.writeln("your name:" +name);
+	document.writeln("your id:" +id);
+	document.writeln("your email:" +email);
+	document.writeln("your phone:" +phone);
+	document.writeln("your dob:" +dob);
+}
+</script> -->
+
+<!-- <script type="text/javascript">
+	function passValue(){
+	
+	var name= document.getElementById("contact-name").value;
+	localStorage.setItems("textvalue",name);
+	var emp= document.getElementById("contact-id").value;
+	localStorage.setItems("textvalue",emp);
+	var mail= document.getElementById("contact-mail").value;
+	localStorage.setItems("textvalue",mail);
+	var phone= document.getElementById("contact-phone").value;
+	localStorage.setItems("textvalue",phone);
+	var dob= document.getElementById("contact-dob").value;
+	localStorage.setItems("textvalue",dob);
+	return false;
+}
+
+</script> -->
+
+
+
+
+
+	
+</head>
+<body>
+	<div class="container">
+		<h1>Sign in <i class="fa-solid fa-right-from-bracket"></i></h1>
+		<form id="myform"   >
+			<div class="form-control"  >
+				<span id="name-error"> </span>
+				<input type="text" name="name"  id="contact-name" onkeyup="validateName()" required>
+				
+				<label><i class="fa-solid fa-user"></i> name</label>
+
+			</div>
+
+
+
+			<div class="form-control">
+				<span id="id-error"> </span>
+				<input type="text" name="Employee-id"   id="contact-id" onkeyup="validateId()" required>
+				
+				<label><i class="fa-solid fa-id-badge"></i> employe id</label>
+			</div>
+			<div class="form-control">
+				<span id="Mail-error"> </span>
+				<input type="text" name="email"  id="contact-mail" onkeyup="validateMail()"   required >
+				
+				<label><i class="fa-solid fa-envelope"></i> personal-email</label>
+			</div>
+			<div class="form-control">
+				<span id="phone-error"> </span>
+				<input type="text" name="phone number" id="contact-phone" onkeyup="validatePhone()" required >
+				
+				<label><i class="fa-solid fa-phone"></i> phone number</label>
+			</div>
+			<div class="form-control">
+				<span id="dob-error"> </span>
+				<input type="text" name="dob" id="contact-dob" required="" onkeyup="validateDob()">
+			
+				<label><i class="fa-solid fa-calendar"></i> DOB</label>
+			</div>
+			<div class="button1" id="radioval">
+				<label style="color: white;">Gender: </label>
+				<input type="radio" name="Gender" required=""><label style=" color: white;">male</label>
+				<input type="radio" name="Gender" required=""><label style="color: white;">female</label>
+				<input type="radio" name="Gender" required=""><label style="color: white;">others</label>
+				<span id="button-error"> </span>
+			</div><br>
+			<input type="checkbox" name="checkbox" required>
+			<label style="color: white;">i am not a robot <i class="fa-solid fa-robot" style="color: lightgreen;"></i></label><br><br>
+			<button class="btn" name="submit"   onclick="return validateForm()">submit</button><br><br>
+			<span id="submit-error"> </span>
+		</form>
+	</div>
+
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

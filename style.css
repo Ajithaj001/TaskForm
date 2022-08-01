@@ -1,0 +1,143 @@
+html{
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background:#f2eee3;
+	overflow: hidden;
+	margin: 0;
+	width: 105%;
+	max-width: 1920px;
+	min-width: 480px;
+	height:200px;
+	margin-left: -8px;
+
+
+}
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background:rgba(0,0,0,.6);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	border-radius: 5px
+}
+.form-control label{
+	position: absolute;
+	top: 15px;
+	left: 0;
+	pointer-events: none;
+
+}
+.form-control label span{
+	display: inline-block;
+	font-size: 18px;
+	min-width: 5px;
+	transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span, 
+.form-control input:valid +label span{
+	color :lightblue;
+	transform: translateY(-30px);
+}
+.form-control input{
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px #fff solid;
+	display: block;
+	padding: 15px 0;
+
+	
+
+}
+.container h1{
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+.container .form-control{
+	position: relative;
+
+}
+.container .form-control input{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border:none;
+	border-bottom: 1px solid #fff;
+}
+.container .form-control label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+}
+.container .form-control input:focus ~ label,
+.container .form-control input:valid ~ label {
+	top:-20px;
+	left: 0;
+	color:#03e9f4;
+	font-size: 12px;
+
+
+}
+
+.form-control{
+
+
+}
+
+.container .form-control input:focus ,
+.container .form-control input:valid {
+	outline: 0;
+	border-right-color: lightblue;
+} 
+
+.btn{
+	cursor: pointer;
+	display: inline-block;
+	width: 100%;
+	background:lightblue;
+	padding: 15px;
+	font-family: inherit;
+	font-size: 16px;
+	border:0;
+	border-radius: 5px;
+}
+
+.btn:focus:{
+	outline: 0;
+
+}
+
+.btn:active{
+	transform: scale(0.95);
+}
+
+.form-control span{
+	position: absolute;
+	bottom: 12px;
+	right: 17px;
+	font-size: 14px;
+	color: red;
+	opacity: 0.6;
+}
+#submit-error{
+	color: red;
+}
+.form-control span i {
+	color:  seagreen;
+}
